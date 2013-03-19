@@ -3,13 +3,12 @@
 
 #import "UIColor+ORJColor.h"
 
-#define ORJUIColorFromRGB(rgbValue) [UIColor \
-    colorWithRed:((float)(((rgbValue) & 0xFF0000) >> 16))/255.0f \
-           green:((float)(((rgbValue) & 0xFF00) >> 8))/255.0f \
-            blue:((float)((rgbValue) & 0xFF))/255.0f \
-           alpha:1.0]
-
-#define IBAUIColorFromRGB(rgbValue) 
+UIColor *ORJUIColorFromRGBA(uint32_t rgbValue, CGFloat alpha) {
+    return [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0f
+                           green:((float)((rgbValue & 0xFF00) >> 8))/255.0f
+                            blue:((float)(rgbValue & 0xFF))/255.0f
+                           alpha:alpha];
+}
 
 @implementation UIColor (ORJColor)
 
@@ -20,7 +19,7 @@
     dispatch_once(&onceToken, ^{
         colorNameCache = @{
             #define CSS(x, y) \
-            @#y : ORJUIColorFromRGB(x),
+                @#y : ORJUIColorFromRGB(x),
             #include "CSSColors.def"
         };
     });

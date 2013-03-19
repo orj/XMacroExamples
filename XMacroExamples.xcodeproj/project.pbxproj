@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A705767116F8778800EC7292 /* ORJTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = A705767016F8778800EC7292 /* ORJTheme.m */; };
+		A705767516F8781B00EC7292 /* ORJThemeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A705767416F8781B00EC7292 /* ORJThemeViewController.m */; };
+		A705767E16F8857300EC7292 /* Hello.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A705767D16F8857300EC7292 /* Hello.jpg */; };
 		A7130E3C16F7340D00458CA3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7130E3B16F7340D00458CA3 /* UIKit.framework */; };
 		A7130E3E16F7340D00458CA3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7130E3D16F7340D00458CA3 /* Foundation.framework */; };
 		A7130E4016F7340D00458CA3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7130E3F16F7340D00458CA3 /* CoreGraphics.framework */; };
@@ -21,6 +24,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A705766F16F8778800EC7292 /* ORJTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORJTheme.h; sourceTree = "<group>"; };
+		A705767016F8778800EC7292 /* ORJTheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORJTheme.m; sourceTree = "<group>"; };
+		A705767216F877B400EC7292 /* Theme.def */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; path = Theme.def; sourceTree = "<group>"; };
+		A705767316F8781B00EC7292 /* ORJThemeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORJThemeViewController.h; sourceTree = "<group>"; };
+		A705767416F8781B00EC7292 /* ORJThemeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORJThemeViewController.m; sourceTree = "<group>"; };
+		A705767D16F8857300EC7292 /* Hello.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Hello.jpg; sourceTree = "<group>"; };
 		A7130E3816F7340D00458CA3 /* XMacroExamples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XMacroExamples.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7130E3B16F7340D00458CA3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		A7130E3D16F7340D00458CA3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -56,6 +65,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A705766E16F8777200EC7292 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				A705766F16F8778800EC7292 /* ORJTheme.h */,
+				A705767016F8778800EC7292 /* ORJTheme.m */,
+				A705767216F877B400EC7292 /* Theme.def */,
+				A705767316F8781B00EC7292 /* ORJThemeViewController.h */,
+				A705767416F8781B00EC7292 /* ORJThemeViewController.m */,
+			);
+			name = Theme;
+			sourceTree = "<group>";
+		};
+		A705767C16F8856300EC7292 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A705767D16F8857300EC7292 /* Hello.jpg */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		A7130E2F16F7340D00458CA3 = {
 			isa = PBXGroup;
 			children = (
@@ -86,6 +115,8 @@
 		A7130E4116F7340D00458CA3 /* XMacroExamples */ = {
 			isa = PBXGroup;
 			children = (
+				A705767C16F8856300EC7292 /* Resources */,
+				A705766E16F8777200EC7292 /* Theme */,
 				A7130E6016F73A2B00458CA3 /* Colors */,
 				A7130E5F16F739DD00458CA3 /* Errors */,
 				A7130E4A16F7340D00458CA3 /* ORJAppDelegate.h */,
@@ -185,6 +216,7 @@
 				A7130E4E16F7340D00458CA3 /* Default.png in Resources */,
 				A7130E5016F7340D00458CA3 /* Default@2x.png in Resources */,
 				A7130E5216F7340D00458CA3 /* Default-568h@2x.png in Resources */,
+				A705767E16F8857300EC7292 /* Hello.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -199,6 +231,8 @@
 				A7130E4C16F7340D00458CA3 /* ORJAppDelegate.m in Sources */,
 				A7130E5A16F7345800458CA3 /* NSError+ORJError.m in Sources */,
 				A7130E5E16F739BF00458CA3 /* UIColor+ORJColor.m in Sources */,
+				A705767116F8778800EC7292 /* ORJTheme.m in Sources */,
+				A705767516F8781B00EC7292 /* ORJThemeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,6 +349,7 @@
 				A7130E5716F7340D00458CA3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

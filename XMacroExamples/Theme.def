@@ -1,0 +1,26 @@
+
+// Theme definition
+
+#define OffWhite                      RGB(0xf2, 0xf2, 0xf2)
+#define RedOchre                      RGB(0xec, 0x7d, 0x23)
+#define MuddyBrown                    RGB(0x73, 0x52, 0x19)
+#define Darkness                      RGBA(0x22, 0x22, 0x22, 0.8f)
+
+COLOR(ViewBackground,                 OffWhite)
+
+COLOR(HelloXMacrosText,               RedOchre)
+COLOR(HelloXMacrosTextShadow,         Darkness)
+COLOR(HelloXMacrosBackground,         OffWhite)
+
+FONT(HelloXMacrosText,                Helvetica, 44.0f)
+
+IMAGE(HelloXMacros,                   Hello.jpg)
+
+LABEL(HelloXMacros)
+
+#undef RGB
+#undef RGBA
+#undef COLOR
+#undef FONT
+#undef IMAGE
+#undef LABEL

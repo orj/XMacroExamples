@@ -1,0 +1,8 @@
+//  Copyright (c) 2013 Oliver Jones. All rights reserved.
+//
+
+ERROR(Whoopsie, 1000, error.message.whoopsie)
+ERROR(BooBoo,   1001, error.message.booboo)
+ERROR(Crap,     1002, error.message.crap)
+
+#undef ERROR

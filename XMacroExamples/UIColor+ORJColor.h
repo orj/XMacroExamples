@@ -5,8 +5,11 @@
 
 extern UIColor *ORJUIColorFromRGBA(uint32_t colorHex, CGFloat alpha);
 
-#define ORJUIColorFromRGB(rgbValue) ORJUIColorFromRGBA((rgbValue), 1.0f)
+static inline UIColor *ORJUIColorFromRGB(uint32_t rgbValue) {
+    return ORJUIColorFromRGBA((rgbValue), 1.0f);
+}
 
 @interface UIColor (ORJColor)
-+ (UIColor *)orjColorWithCSSName:(NSString *)cssColorName;
++ (UIColor *)orjUIColorWithCSSName:(NSString *)cssColorName;
++ (NSString *)orjCSSColorForUIColor:(UIColor *)color;
 @end

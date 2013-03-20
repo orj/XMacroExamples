@@ -5,8 +5,8 @@
 
 #import "UIColor+ORJColor.h"
 
-#define RGBA(r, g, b, a) ORJUIColorFromRGBA( ( ((r)<<16)| ((g)<<8) | (b) ), (a))
-#define RGB(r, g, b) RGBA(r, g, b, 1.0f)
+#define RGBA(r, g, b, a)    ORJUIColorFromRGBA( ( ((r)<<16)| ((g)<<8) | (b) ), (a))
+#define RGB(r, g, b)        RGBA(r, g, b, 1.0f)
 
 #define COLOR(name, color)          + (UIColor *)colorFor##name { return color; }
 

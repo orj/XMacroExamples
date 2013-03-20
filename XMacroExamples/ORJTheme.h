@@ -4,7 +4,7 @@
 #import <UIKit/UIKit.h>
 
 #define RGBA(r, g, b, a)
-#define RGB(r, g, b) RGBA(r, g, b, 1.0f)
+#define RGB(r, g, b) 
 
 #define COLOR(name, color)              + (UIColor *)colorFor##name;
 #define FONT(name, fontname, size)      + (UIFont *)fontFor##name;

@@ -3,6 +3,7 @@
 
 #import "ORJAppDelegate.h"
 #import "ORJThemeViewController.h"
+#import "UIColor+ORJColor.h"
 
 @implementation ORJAppDelegate
 
@@ -14,6 +15,13 @@
     
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+    
+    NSLog(@"%@", [UIColor orjCSSColorForUIColor:[UIColor redColor]]);
+    NSLog(@"%@", [UIColor orjCSSColorForUIColor:[UIColor whiteColor]]);
+    
+    NSLog(@"%@", [UIColor orjUIColorWithCSSName:@"white"]);
+    NSLog(@"%@", [UIColor orjUIColorWithCSSName:@"blue"]);
+    
     return YES;
 }
 
